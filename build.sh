@@ -20,10 +20,16 @@ xcrun swiftc \
     main.swift
 
 # Generate foo.a
-xcrun libtool -static -o Build/foo.a Build/foo.o
+xcrun libtool -static \
+    -o Build/foo.a \
+    Build/foo.o
 
 # Build main.o
-xcrun swiftc -c -o Build/main.o -sdk $SDK_PATH -target x86_64-apple-ios13.0-simulator main.swift
+xcrun swiftc -c \
+    -o Build/main.o \
+    -sdk $SDK_PATH \
+    -target $TARGET \
+    main.swift
 
 # Build main excutable
 xcrun clang Build/main.o Build/foo.a\
