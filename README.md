@@ -1,5 +1,5 @@
 # zld autolinking issue
-In some cases, [zld](https://github.com/michaeleisel/zld) is not able to autolink `libswiftCompatibility50.a` and `libswiftCompatibilityDynamicReplacements.a`. We can see error message like below.
+In some cases, [zld](https://github.com/michaeleisel/zld) is not able to autolink `libswiftCompatibility50.a` and `libswiftCompatibilityDynamicReplacements.a`. I'm using Xcode 11.3.1.
 
 ```
 Undefined symbols for architecture x86_64:
